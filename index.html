@@ -48,7 +48,7 @@
             </div>
 
         <div class="hero-text">
-            <h5>Hi, I'm <span class =""> Software Developer</span></h5>
+            <h5>Hi, I'm <span class ="input"> Software Developer</span></h5>
             <h1>Thabang Kola</h1>
             <p>I am a passionate and detail-driven software developer with a deep commitment to writing clean, efficient,
                  and maintainable code. I specialize in building reliable applications that solve real-world problems, with
@@ -72,11 +72,34 @@
 </div>
     </div>
 
+    /*Typed js for typing text effect*/
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 Thabang Kola. All rights reserved.</p>
             <p>Designed by Thabang Kola</p>
         </div>
+
+        /**Creating button click show/hide navbar **/
+        <script>
+            var togglebtn=document.querySelector('.togglebtn');
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelectorAll(".navlinks li ");
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+                
+            })
+
+            var typed = new Typed(".input" ,{
+                strings: ["Web Developer", "Tech Enthusiast", "Software Developer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
+        </script>
     </footer>
 
     <script src="script.js"></script>
