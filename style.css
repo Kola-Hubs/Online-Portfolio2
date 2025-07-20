@@ -77,6 +77,23 @@ nav .togglebtn span{
     transition-property: transform, opacity;
 }
 
+nav .navlinks{
+    list-style-type: none;
+}
+
+nav .navlinks li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav .navlinks li a{
+    color: #e5e5e5;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-right: 2.5rem;
+    
+}
 
 
 
