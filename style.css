@@ -102,12 +102,14 @@ nav .navlinks li a{
 }
 
 .container .hero-pic{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     overflow: hidden;
     border: 15px solid #444;
     box-shadow: 5 7 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin-top: -600px;
 }
 
 .hero-pic img{
@@ -145,7 +147,17 @@ nav .navlinks li a{
 .hero-text p{
     color: #e5e5e5;
 }
-     
+     .hero-pic{
+
+margin-top: -100px;
+justify-content: center;
+width: 150px;
+height: 150px;
+display: flex;
+
+     }
+
+
 .btn-group{
     margin: 45px 0;
 }
@@ -248,3 +260,120 @@ nav .navlinks li a{
     }
 }
 
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #333;
+      margin: 0;
+      padding: 2rem;
+      color:#f8f9fa;
+}
+
+ .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+      justify-content: center;
+      padding: 2rem;
+      background: rgb(188, 185, 185);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+      .section {
+      flex: 1 1 300px;
+    }
+
+     .section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #1e1e1e;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+     .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+      text-align: center;
+    }
+
+       .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+    }
+
+       .skill-item img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-item span {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #161313;
+      margin-top: 0.4rem;
+      font-weight: bold;
+    }
+
+    /* LANGUAGES */
+    .languages-grid {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .language-card {
+      padding: 1rem 1.5rem;
+      border-radius: 15px;
+      background: #574545;
+      transition: all 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+      min-width: 100px;
+    }
+
+     .language-card:hover {
+      background-color: #007bff;
+      color: white;
+      transform: translateY(-4px);
+    }
+
+    .language-card small {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .language-code {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .social-container {
+      text-align: center;
+      margin-top: 2rem;
+      color:#f8f9fa;
+    }
+
+    .social-container {
+      text-align: left;
+      
+      color:#f8f9fa;
+    }
+
+
+    .section h2{
+        color:#e5e5e5
+    }
