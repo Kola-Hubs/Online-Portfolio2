@@ -25,16 +25,16 @@
 
             <nav>
                 <div class ="togglebtn">
-                    <span>  </span>
-                    <span>  </span>
-                    <span>  </span>
+                    <span>       </span>
+                    <span>       </span>
+                    <span>        </span>
                 </div>
                 <ul class ="navlinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li class="nav-link"><a href="index.html" >Home</a></li>
+                    <li class="nav-link"><a href="portfolio.html" >Portfolio</a></li>
+                    <li class="nav-link"><a href="resume.html" >Resume</a></li>
+                    <li class="nav-link"><a href="contact.html" >Contact</a></li>
+                    <li class="nav-link"><a href="blog.html" >Blog</a></li>
                     </ul>
             </nav>
         </header>
@@ -44,8 +44,11 @@
         <div class="container">
             <div class ="hero-pic">
                 <!-- Hero image with overlay text -->
-            <img src="https://www.ecpi.edu/sites/default/files/software-development-vs-web-development.jpg" alt="profile pic">
-            </div>
+            <img src="20241101_095249.jpg" alt="profile picture" class="profile-image">
+
+        </div>
+
+      
 
         <div class="hero-text">
             <h5>Hi, I'm <span class ="input"> Software Developer</span></h5>
@@ -78,12 +81,14 @@
                                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                                       <span>Java</span>
                                     </div>
+                                    
 
                                  </div>
                                  </div>
                                   </div>
 
 
+ <!-- Download CV and Contact buttons -->
                   <div class="btn-group">
                       <a href="#" class="btn active">  Download CV</a>
                       <a href="#" class="btn">  Contact</a>
@@ -92,8 +97,7 @@
                   
 
                    
-
-                                  <!-- Languages section -->
+  <!-- Languages section -->
                     <div class="section">
                         <h2 class="section-title">Languages I Speak</h2>
     <div class="languages-grid">
@@ -117,8 +121,16 @@
                   <div class="social">
                       <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
                       <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                      <a href="#" class="icon"><i class="fa-brands fa-Instagram"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
                   </div>
+                  <div class="contact-card">
+    <p><i class="fas fa-envelope"></i> thabangkola01@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +27 76 252 0313</p>
+    <p><i class="fas fa-map-marker-alt"></i> Pretoria, South Africa</p>
+    <p><i class="fas fa-graduation-cap"></i> Undergraduate Student</p>
+  </div>
 
   </div>
 </div> 
@@ -133,7 +145,33 @@
 
     </div>
 
-    
+    <!--Contact section-->
+    <div class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>Location: Pretoria, South Africa</span>
+                </li>
+                
+                <li class="contact-info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: thabangkola01@gmail.com</span>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone: +27 76 252 0313</span>
+                </li>
+            </ul>
+            <!-- Contact form -->
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Your Name" class="form-input" required>
+            <input type="email" placeholder="Your Email" class="form-input" required>
+            <textarea placeholder="Your Message" class="form-input" required></textarea>
+            <button class="button submit-button">Send Message</button>
+        </form>
+    </div>
 
     <!-- Typed js for typing text effect -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
@@ -145,6 +183,7 @@
         </div>
 
         <!-- Creating button click show/hide navbar -->
+         <span class="input">   </span>
         <script>
             var togglebtn=document.querySelector('.togglebtn');
             var nav=document.querySelector(".navlinks");
@@ -155,15 +194,17 @@
                 nav.classList.toggle("open");
                 
             })
-
             var typed = new Typed(".input" ,{
                 strings: ["Web Developer", "Tech Enthusiast", "Software Developer"],
                 typeSpeed: 100,
                 backSpeed: 100,
+                backDelay: 800,
                 loop: true
-            })
+            });
         </script>
     </footer>
+    
+
 
     <script src="script.js"></script>
 </body>
